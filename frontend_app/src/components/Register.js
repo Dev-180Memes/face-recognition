@@ -6,8 +6,6 @@ import { getFaces } from "../features/auth/facenetSlice";
 
 export const Register = ({enableInput}) => {
 
-    const isFirefox = typeof InstallTrigger !== 'undefined';
-
     const activeTab = useSelector(getActiveTab)
     const dispatch = useDispatch()
     const request = useSelector(getRequest)
@@ -93,7 +91,6 @@ export const Register = ({enableInput}) => {
                     id="name"
                     className="my-input input50"
                     placeholder="Name"
-                    disabled={isFirefox ? false : true}
                     value={name || ''}
                     onChange={(e) => dispatch(setRegisterName(e.target.value))}
                 />
@@ -106,7 +103,6 @@ export const Register = ({enableInput}) => {
                     id="register-email"
                     className="my-input input50"
                     placeholder="Email"
-                    disabled={isFirefox ? false : true}
                     value={email || ''}
                     onChange={(e) => dispatch(setRegisterEmail(e.target.value))}
                 />
@@ -119,7 +115,6 @@ export const Register = ({enableInput}) => {
                     id="register-password"
                     className="my-input input50"
                     placeholder="Password"
-                    disabled={isFirefox ? false : true}
                     value={password || ''}
                     onKeyUp={validatePassword}
                     onChange={(e) => dispatch(setRegisterPassword(e.target.value))}
@@ -133,7 +128,6 @@ export const Register = ({enableInput}) => {
                     id="repeat-password"
                     className="my-input input50"
                     placeholder="Repeat Password"
-                    disabled={isFirefox ? false : true}
                     value={repeatPassword || ''}
                     onChange={(e) => dispatch(setRegisterRepeatPassword(e.target.value))}
                 />
