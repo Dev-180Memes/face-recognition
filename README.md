@@ -2,10 +2,6 @@
 
 A simple authentication page with face recognition and face verification built with ReactJS and Face-api.js.
 
-## Demo
-
-- [https://demo-mmsa2022.albertovalerio.com/](https://demo-mmsa2022.albertovalerio.com/)
-
 ## Features
 
 - **Face recognition and verification (Login/Register)**
@@ -61,22 +57,6 @@ MONGO_URI='mongodb+srv://<USERNAME>:<PASSWORD>@cluster0.bckok.mongodb.net/<DATAB
 TOKEN_KEY='...' (used by JWT, recommended 50/60 chars)
 PRIVATE_KEY='...' (used by Bcrypt, must be of 32 chars)
 ```
-
-
-## Contact
-
-My name is **Alberto G. Valerio** and this project has been realized by me as university laboratory activity for the exam in *Models and Methods for Application Security*, Master Degree in Computer Science, curriculum studies in Artificial Intelligence at University of Bari "Aldo Moro", Italy.
-
-My email - [info@albertovalerio.com](info@albertovalerio.com)
-
-My website: [https://albertovalerio.com](https://albertovalerio.com)
-
-## Acknowledgments
-
-- **[@reactjs](https://reactjs.org/)**
-- **[@redux_toolkit](https://redux-toolkit.js.org/)**
-- **[@mongodb](https://www.mongodb.com/)**
-- **[@faceapi.js](https://github.com/justadudewhohacks/face-api.js/)**
 
 ## License
 
